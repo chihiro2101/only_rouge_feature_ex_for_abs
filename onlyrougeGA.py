@@ -334,7 +334,10 @@ def start_run(processID, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, sub_storie
         for abs_sent in raw_abs_sent_list:
             preprocessed_abs_sent = preprocess_raw_sent(abs_sent)
             preprocessed_abs_sentences_list.append(preprocessed_abs_sent)    
-        preprocessed_abs_sentences = (" ").join(preprocessed_abs_sentences_list)        
+        preprocessed_abs_sentences = (" ").join(preprocessed_abs_sentences_list)  
+
+        if len(preprocessed_sentences) < 7 or len(preprocessed_abs_sentences_list) < 3:
+            continue
 
         rougeforsentences = evaluate_rouge(raw_sentences,abstract)
           
@@ -365,7 +368,7 @@ def multiprocess(num_process, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stori
     set_of_docs = [stories[i:i + n] for i in range(0, len(stories), n)] 
     for index, sub_stories in enumerate(set_of_docs):
         p = multiprocessing.Process(target=start_run, args=(
-            index, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE,sub_stories, save_path[index], 1))
+            index, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE,sub_stories, save_path[index], 0))
         processes.append(p)
         p.start()      
     for p in processes:
@@ -407,7 +410,7 @@ def main():
     
     multiprocess(5, POPU_SIZE, MAX_GEN, CROSS_RATE,
                  MUTATE_RATE, stories, save_path)
-    # start_run(1, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stories, save_path[0], 1)
+    # start_run(1, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stories, save_path[0], 0)
 
     print("--- %s mins ---" % ((time.time() - start_time)/(60.0*len(stories))))
 
