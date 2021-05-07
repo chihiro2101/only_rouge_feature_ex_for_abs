@@ -368,7 +368,7 @@ def multiprocess(num_process, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stori
     set_of_docs = [stories[i:i + n] for i in range(0, len(stories), n)] 
     for index, sub_stories in enumerate(set_of_docs):
         p = multiprocessing.Process(target=start_run, args=(
-            index, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE,sub_stories, save_path[index], 0))
+            index, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE,sub_stories, save_path[index], 1))
         processes.append(p)
         p.start()      
     for p in processes:
@@ -410,7 +410,7 @@ def main():
     
     multiprocess(5, POPU_SIZE, MAX_GEN, CROSS_RATE,
                  MUTATE_RATE, stories, save_path)
-    # start_run(1, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stories, save_path[0], 0)
+    # start_run(1, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stories, save_path[0], 1)
 
     print("--- %s mins ---" % ((time.time() - start_time)/(60.0*len(stories))))
 
