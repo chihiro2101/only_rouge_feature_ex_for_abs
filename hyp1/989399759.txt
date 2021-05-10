@@ -1,1 +1,0 @@
-when a link-state advertisement is received at a node , the node looks up the sequence number it has stored for the source of that link-state message : if this message is newer ( i.e no link is considered to have been correctly reported unless the two ends agree ; i.e filling the routing table . the optimized link state routing protocol for mobile ad hoc networks 

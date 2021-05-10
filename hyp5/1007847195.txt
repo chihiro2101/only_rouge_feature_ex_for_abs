@@ -1,1 +1,0 @@
-the 750 with its l2 cache bus required more pins and thus a different package , a 360-pin ball grid array ( bga ) the powerpc 750 was used in many computers from apple , including the original imac it had a die size of 43 & nbsp ; mm 2 through a 0.18 μm copper process it draws up to 2.7 w at 600 & nbsp ; mhz , 9.8 w at 1 & nbsp ; ghz 

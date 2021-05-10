@@ -1,1 +1,0 @@
-an important parameter is the required frequency response a peak eq filter makes a peak or a dip in the frequency response , commonly used in equalization ( audio ) a filter which does not meet this requirement may in some situations prove useless or even harmful a high rate will require more in terms of computational resources , but less in terms of anti-aliasing filters 

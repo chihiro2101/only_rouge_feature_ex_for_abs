@@ -1,1 +1,0 @@
-this problem is not difficult to fix , however ; the solution being to periodically play a selected frame twice this requires playback speed to be slowed by a tenth of a percent this pulldown method is sometimes used in order to convert 24 frame/s material to 25 frame/s if the total playback time must be kept exact , a single frame can be dropped every 1000 frames 
