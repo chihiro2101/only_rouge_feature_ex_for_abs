@@ -33,7 +33,7 @@ class METRIC(object):
                 summary += self.raw_sentences[i] + ' '
         try:
             rouge = Rouge()
-            scores = rouge.get_scores(summary, abstract, avg=True)
+            scores = rouge.get_scores(summary, self.abstract, avg=True)
             rouge1f = scores["rouge-1"]["f"]
             rouge2f = scores["rouge-2"]["f"]
         except Exception:
