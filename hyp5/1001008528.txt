@@ -1,0 +1,1 @@
+reverse mathematics is a program in mathematical logic that seeks to determine which axioms are required to prove theorems of mathematics carnegie-mellon technical report cmu-phil-120 subsystems of second-order arithmetic , second edition stanford encyclopedia of philosophy . 

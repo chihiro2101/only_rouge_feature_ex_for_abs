@@ -1,0 +1,1 @@
+in negative repressible operons , transcription of the operon normally takes place the trp operon , involved in the synthesis of tryptophan ( which itself acts as the corepressor ) , is a negatively controlled repressible operon however , when an inhibitor is bound by the activator , it is prevented from binding the dna this stops activation and transcription of the system 

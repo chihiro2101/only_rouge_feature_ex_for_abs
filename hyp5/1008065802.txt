@@ -1,0 +1,1 @@
+unlike board-level designs composed of discrete parts , it is not practical to breadboard integrated circuits before manufacture rohrer , left berkeley , prof mayaram , memorandum no , is it time for spice4 ? , 2004 numerical aspects of device and circuit modeling workshop , june 23–25 , 2004 , santa fe , new mexico 

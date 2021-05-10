@@ -1,0 +1,1 @@
+the text in the attribute can be passed on to the user in a return web page accounting is described in rfc 2866 if the realm is known , the server will then proxy the request to the configured home server for that domain but in roaming scenarios , the nas , proxies and home server could be typically managed by different administrative entities 
