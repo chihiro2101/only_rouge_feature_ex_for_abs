@@ -379,7 +379,7 @@ def multiprocess(num_process, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stori
 def main():
     # Setting Variables
     POPU_SIZE = 30
-    MAX_GEN = 200
+    MAX_GEN = 100
     CROSS_RATE = 0.8
     MUTATE_RATE = 0.4
 
